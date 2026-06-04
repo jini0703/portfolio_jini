@@ -52,7 +52,7 @@ export default function WelcomeOverlay() {
           flexShrink: 0
         }}>
           <img 
-            src="https://drive.google.com/thumbnail?id=12EbuAYqe_pjYoi1DvuA52xnpIgEDcf7t&sz=w1000" 
+            src="/profile.jpeg"
             alt="Anjini Pandey" 
             style={{
               width: '280px',
