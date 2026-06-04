@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* LIGHT MODE (Cute Pink Fantasy) */
+  --color-bg: #ffedf5; 
+  --color-primary: #ff5e94; 
+  --color-secondary: #ffafcc; 
+  --color-accent: #ffbaff; 
+  --color-text-main: #4a1936; /* Deep elegant plum/burgundy for readability */
+  --color-text-muted: #733c58; /* Muted plum */
+  
+  --glass-bg: rgba(255, 255, 255, 0.5);
+  --glass-border: rgba(255, 105, 180, 0.4);
+  --glass-shadow: rgba(255, 105, 180, 0.15);
+  --text-glow: rgba(255, 105, 180, 0.1);
+  --card-bg: rgba(255, 255, 255, 0.85); /* Solid white-pink card feel */
+  --pill-bg: rgba(255, 94, 148, 0.1);
+  --pill-text: #ff5e94;
+  
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+:root[data-theme="dark"] {
+  /* DARK MODE (Feminine Midnight Fantasy) */
+  --color-bg: #090214; /* Deepest dark plum */
+  --color-primary: #d785ff; /* Glowing bright lilac */
+  --color-secondary: #ff85e0; /* Pink firefly glow */
+  --color-accent: #ff2a85; /* Neon hot pink */
+  --color-text-main: #ffe6f0; /* Rose gold / soft pink text */
+  --color-text-muted: #bda1c4; /* Muted violet text */
+  
+  --glass-bg: rgba(26, 7, 37, 0.6);
+  --glass-border: rgba(215, 133, 255, 0.4);
+  --glass-shadow: rgba(215, 133, 255, 0.2);
+  --text-glow: rgba(215, 133, 255, 0.5);
+  --card-bg: rgba(18, 5, 24, 0.85);
+  --pill-bg: rgba(215, 133, 255, 0.15);
+  --pill-text: #d785ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Smoothly transition all color and background changes for theme swapping */
+  transition: background-color 2s ease, color 2s ease, border-color 2s ease, box-shadow 2s ease, text-shadow 2s ease;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide default scrollbar for deeper immersion */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Glassmorphism utility for the 3D HTML elements */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px var(--glass-shadow);
+}
+
+.glass-panel {
+  background: linear-gradient(135deg, var(--card-bg) 0%, var(--glass-bg) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow);
+}
+
+/* Button & Pill utility classes */
+.btn-premium {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn-premium:hover {
+  background: var(--pill-bg);
+  box-shadow: 0 0 20px var(--glass-shadow);
+  transform: translateY(-3px);
+}
+
+.tech-pill {
+  padding: 0.4rem 1rem;
+  background: var(--pill-bg);
+  color: var(--pill-text);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
