@@ -152,7 +152,7 @@ export default function Hero() {
 
             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
               <a 
-                href="https://drive.google.com/file/d/1g_Cj9RXy5367DA_ZQK4mxRMSBeBP5l69/view?usp=sharing"
+                href="https://jini0703.github.io/Resume/"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-premium"
