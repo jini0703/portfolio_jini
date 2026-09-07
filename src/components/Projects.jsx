@@ -41,6 +41,15 @@ export default function Projects() {
   const projects = [
     { 
       id: "01",
+      title: "AEROVAULT", 
+      subtitle: "Cloud Storage SaaS",
+      desc: "Built a full-stack cloud storage app with JWT auth, nested folders, file sharing, and a 30-day trash lifecycle — backend powered by Spring Boot 3 + PostgreSQL, files stored on AWS S3.",
+      tech: ["React", "Spring Boot", "AWS S3", "PostgreSQL"],
+      link: "https://aerovault-chi.vercel.app/",
+      img: "/proj_aerovault.jpg"
+    },
+    { 
+      id: "02",
       title: "CURO", 
       subtitle: "AI-Powered Career Assistant",
       desc: "Engineered a full-stack AI-driven career companion featuring comprehensive resume parsing, interview preparation workflows, and personalized job recommendation engines.",
@@ -49,7 +58,7 @@ export default function Projects() {
       img: "/proj_curo.png"
     },
     { 
-      id: "02",
+      id: "03",
       title: "Pixel Canvas", 
       subtitle: "Interactive Web Application",
       desc: "A digital drawing tool allowing users to create custom grid sizes and select brush colors to design pixel artwork effortlessly.",
@@ -58,7 +67,7 @@ export default function Projects() {
       img: "/proj_pixel.png"
     },
     { 
-      id: "03",
+      id: "04",
       title: "Roommate Finder", 
       subtitle: "Full-Stack Platform",
       desc: "A platform designed to help college students find highly compatible roommates based on detailed lifestyle preferences and habits.",
@@ -67,7 +76,7 @@ export default function Projects() {
       img: "/proj_roommate.png"
     },
     { 
-      id: "04",
+      id: "05",
       title: "Web Dev Archive", 
       subtitle: "Collection of My Work",
       desc: "A complete collection of all my front-end development assignments, mini-projects, and creative UI experiments.",
